@@ -103,8 +103,13 @@ public class Pessoa implements Serializable {
     @Column(name="Campus")
     @ManyToOne
     private Campus campus;
+
+   
     
     //Construtores
+    public Pessoa() {
+        this.nome = "";
+    }
 
     public Pessoa(Long id, String nome, Date dataNascimento, int cpf, String rg, String rgOrgaoExpedidor, Date rgDataExpedicao, boolean status, String enderecoRua, String enderecoNumero, String enderecoBairro, String enderecoComplmento, int enderecoCep, String telefoneFixo, String telefoneCelular, String emailEndereco, Estado estado, Nacionalidade nacionalidade, Cidade cidade, Campus campus) {
         this.id = id;
