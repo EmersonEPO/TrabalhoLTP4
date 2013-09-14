@@ -30,6 +30,10 @@ public class Nacionalidade implements Serializable {
 
     //Construtor
 
+    public Nacionalidade() {
+        this.nomeNacionalidade = "";
+    }
+    
     public Nacionalidade(Long id, String nomeNacionalidade) {
         this.id = id;
         this.nomeNacionalidade = nomeNacionalidade;
