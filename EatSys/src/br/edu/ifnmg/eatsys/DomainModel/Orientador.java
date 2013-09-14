@@ -16,7 +16,7 @@ import javax.persistence.Table;
  * @author emerson
  */
 @Entity
-@DiscriminatorValue("Orientador")
+@DiscriminatorValue("Orientador") //Vai para a coluna Referencia_FK em Pessoa
 @Table(name="Orientadores")
 public class Orientador extends Pessoa implements Serializable {
  
