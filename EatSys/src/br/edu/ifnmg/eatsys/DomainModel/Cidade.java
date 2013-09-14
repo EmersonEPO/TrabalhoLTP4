@@ -35,6 +35,11 @@ public class Cidade implements Serializable {
     
     //Construtor
 
+    public Cidade() {
+        this.nomeCidade = "";
+        this.estado = new Estado();
+    }
+    
     public Cidade(Long id, String nomeCidade, Estado estado) {
         this.id = id;
         this.nomeCidade = nomeCidade;
