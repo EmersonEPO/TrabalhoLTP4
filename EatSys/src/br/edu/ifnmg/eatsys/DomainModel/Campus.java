@@ -30,6 +30,10 @@ public class Campus implements Serializable {
 
     //construtor
 
+    public Campus() {
+        this.nomeCampus = "";
+    }
+    
     public Campus(Long id, String nomeCampus) {
         this.id = id;
         this.nomeCampus = nomeCampus;
