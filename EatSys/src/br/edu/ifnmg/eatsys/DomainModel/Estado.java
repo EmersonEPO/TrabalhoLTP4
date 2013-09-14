@@ -34,7 +34,7 @@ public class Estado implements Serializable {
     
     //Construtor
     public Estado() {
-        this.nomeEstado = "vazio";
+        this.nomeEstado = "";
     }
   
     public Estado(Long id, String nomeEstado, String uf) {
