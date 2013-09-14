@@ -107,8 +107,26 @@ public class Pessoa implements Serializable {
    
     
     //Construtores
-    public Pessoa() {
+     public Pessoa() {
         this.nome = "";
+        this.dataNascimento = new Date();
+        this.cpf = 0;
+        this.rg = "";
+        this.rgOrgaoExpedidor = "";
+        this.rgDataExpedicao = new Date();
+        this.status = true;
+        this.enderecoRua = "";
+        this.enderecoNumero = "";
+        this.enderecoBairro = "";
+        this.enderecoComplmento = "";
+        this.enderecoCep = 0;
+        this.telefoneFixo = "";
+        this.telefoneCelular = "";
+        this.emailEndereco = "";
+        this.estado = new Estado();
+        this.nacionalidade = new Nacionalidade();
+        this.cidade = new Cidade();
+        this.campus = new Campus();
     }
 
     public Pessoa(Long id, String nome, Date dataNascimento, int cpf, String rg, String rgOrgaoExpedidor, Date rgDataExpedicao, boolean status, String enderecoRua, String enderecoNumero, String enderecoBairro, String enderecoComplmento, int enderecoCep, String telefoneFixo, String telefoneCelular, String emailEndereco, Estado estado, Nacionalidade nacionalidade, Cidade cidade, Campus campus) {
